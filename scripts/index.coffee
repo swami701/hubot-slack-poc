@@ -12,6 +12,10 @@ module.exports = (robot) ->
   robot.hear /hello/, (res) ->
     res.send "Hello buddy!"
   
+  robot.hear /help/, (res) ->
+    res.send "*deploy <repo-name> <branch-name> <env>*\n" +
+    "_For Eg: _```deploy hwn master local```"
+
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
   #
