@@ -19,7 +19,7 @@ module.exports = (robot) => {
             return
         }
 
-        res.send(`Deployment Started! for \`${repo}\` for branch: \`${branch}\` in env: \`${env}\` :smile :+1:`)
+        res.send(`Deployment Started! for \`${repo}\` for branch: \`${branch}\` in env: \`${env}\` :smile: :+1:`)
 
         if (repo === 'node-hello-world') {
             cmd.get(
